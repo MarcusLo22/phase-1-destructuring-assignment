@@ -4,27 +4,29 @@ const { expect } = require("chai")
 
 describe("index.js", () => {
   it("String: uses destructuring to declare five animal sounds", () => {
-    expect(moo).to.exist
-    expect(moo).to.equal("cow")
-    expect(neigh).to.exist
-    expect(neigh).to.equal("horse")
-    expect(baa).to.exist
-    expect(baa).to.equal("sheep")
-    expect(oink).to.exist
-    expect(oink).to.equal("pig")
-    expect(cluck).to.exist
-    expect(cluck).to.equal("chicken")
-  })
-  it("String: uses destructuring to declare the four traditional animal names", () => {
-    expect(bessie).to.exist
-    expect(bessie).to.equal("cow")
-    expect(dolly).to.exist
-    expect(dolly).to.equal("sheep")
-    expect(babe).to.exist
-    expect(babe).to.equal("pig")
-    expect(little).to.exist
-    expect(little).to.equal("chicken")
-  })
+    expect(cow).to.exist;
+    expect(cow).to.equal("cow");
+    expect(horse).to.exist;
+    expect(horse).to.equal("horse");
+    expect(sheep).to.exist;
+    expect(sheep).to.equal("sheep");
+    expect(pig).to.exist;
+    expect(pig).to.equal("pig");
+    expect(chicken).to.exist;
+    expect(chicken).to.equal("chicken");
+  });
+  describe("index.js", () => {
+    it("String: uses destructuring to declare five animal sounds", () => {
+      expect(cow).to.exist;
+      expect(cow).to.equal('Bessie');
+      expect(sheep).to.exist;
+      expect(sheep).to.equal('Dolly');
+      expect(pig).to.exist;
+      expect(pig).to.equal('Babe');
+      expect(chicken).to.exist;
+      expect(chicken).to.equal('Little');
+    });
+  });
   it("String: uses destructuring to declare the three traditional animal colors", () => {
     expect(blackAndWhite).to.exist
     expect(blackAndWhite).to.equal("cow")
